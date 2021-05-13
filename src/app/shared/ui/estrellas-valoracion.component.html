@@ -1,0 +1,44 @@
+<div  class="contenedor_valoracion">
+    <div class="c-orden-estrellas">
+       
+        <!--estrella 1-->
+        <div (click)="clickEstrellaUno()" class="c-orden-estrellas">
+            <!--estrella  incolor-->
+            <ng-container *ngIf="true">
+                <img [src]="tipoEstrellaUno" alt="resumen" class="c-estrella">
+            </ng-container>
+        </div>
+          <!--estrella 2-->
+          <div  (click)="clickEstrellaDos()" class="c-orden-estrellas">
+            <!--estrella  incolor-->
+            <ng-container *ngIf="true">
+                <img [src]="tipoEstrellaDos" alt="resumen" class="c-estrella">
+            </ng-container>     
+        </div>
+          <!--estrella 3-->
+          <div (click)="clickEstrellaTres()" class="c-orden-estrellas">
+            <!--estrella  incolor-->
+            <ng-container   *ngIf="true">
+                <img [src]="tipoEstrellaTres" alt="resumen" class="c-estrella">
+            </ng-container>   
+        </div>
+          <!--estrella 4-->
+          <div (click)="clickEstrellaCuatro()" class="c-orden-estrellas">
+            <!--estrella  incolor-->
+            <ng-container  *ngIf="true">
+                <img [src]="tipoEstrellaCuatro" alt="resumen" class="c-estrella">
+            </ng-container>  
+        </div>
+          <!--estrella 5-->
+          <div (click)="clickEstrellaCinco()" class="c-orden-estrellas">
+            <!--estrella  incolor-->
+            <ng-container  *ngIf="true">
+                <img [src]="tipoEstrellaCinco" alt="resumen" class="c-estrella">
+            </ng-container>  
+           
+        </div>
+        <div class="c-valor-estrella-numero">
+            4.8
+        </div>
+    </div>
+</div>

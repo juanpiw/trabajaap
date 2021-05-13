@@ -1,0 +1,67 @@
+
+@import "../../../../src/assets/scss/settings/color";
+@import "../../../../src/assets/scss/settings/fonts";
+@import "../../../../src/assets/scss/utilities/margenes";
+
+.icn-resumen{
+    width: 20px;
+    height: 20px;
+}
+ion-tabs{
+	ion-fab {
+		margin-bottom: env(safe-area-inset-bottom); /* fix notch ios*/
+		ion-fab-button {
+			--box-shadow: none;
+		}
+	}
+	ion-tab-bar {
+		--border: 0;
+		--background: transparent;
+		position: absolute;
+		bottom: 0;
+		left:0; right: 0;
+		width: 100%;
+		&:after{
+			content: " ";
+			width: 100%;
+			bottom: 0;
+			background: var(--ion-color-favorite);
+			height: env(safe-area-inset-bottom);
+			position: absolute;
+		}
+		ion-tab-button {
+			--background: var(--ion-color-favorite);
+		}
+		ion-tab-button.comments {
+			margin-right: 0px;
+			border-top-right-radius: 18px;
+		}
+		ion-tab-button.notifs {
+			margin-left: 0px;
+			border-top-left-radius: 18px;
+		}
+		svg {    
+			width: 72px;
+			margin-top: 19px;
+			path{
+                fill:#f1f0f1;
+			}		
+		}
+	}
+}
+
+.c-texto{
+    padding-top:6px;
+    font-size: 10px;
+    color:$gris2;
+}
+button{
+    --background: $morado1!important;
+}
+ion-fab-button{
+    --background: #7e6ad1!important;
+}
+
+
+
+

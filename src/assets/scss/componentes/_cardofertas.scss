@@ -1,0 +1,44 @@
+
+@import "../settings/color";
+@import "../settings/fonts";
+@import "../utilities/margenes";
+
+.titulo-card-puesto{
+  color:$negro1;
+  font-size: 18px;
+  font-family: KumbhSans-Bold;
+  text-align: left;
+  margin-left:14px;
+  margin-top:20px;
+}
+.titulo-card-empresa{
+    color:$gris;
+    margin-top:20px;
+    text-align: right;
+    font-family:$KumbhSans-regular;
+    font-size: 14px;
+    margin-right:12px;
+
+
+}
+.monto-ofrecido{
+    color:$gris;
+    font-size: 30px;
+    font-family: KumbhSans-Bold;
+    color:$gris;
+    text-align: left;
+    margin-top:28px;
+    margin-left:14px;
+}
+.btn-detalles{
+    color: #ffff;
+    background-color: #17b7bd;
+    height: 34px;
+    margin-top:20px;
+    border-radius: 28px;
+    text-align: center;
+    font-family: KumbhSans-Regular;
+    padding-top: 12px;
+    font-size: 12px;
+    margin-right:12px;
+}

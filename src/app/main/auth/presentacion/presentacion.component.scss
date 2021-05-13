@@ -1,0 +1,62 @@
+@import "../../../../../src/assets/scss/settings/color";
+@import "../../../../../src/assets/scss/settings/fonts";
+@import "../../../../../src/assets/scss/utilities/margenes";
+.c-logo{
+    margin-left: 50px;
+    margin-top: 18px;
+    margin-right: 12px;
+}
+.c-logo_circulo{
+    width: 50px;
+    margin-left:10px;
+    margin-top:20px;
+    text-align: left;
+    display: block;
+}
+.contenedor{
+    background-color:$morado1;
+    height: 100%;
+}
+.c-titulo-entrar{
+    margin-top:20px;
+    margin-bottom: 20px;
+    font-size: 34px;
+    color:$morado2;
+    font-family:$KumbhSans-bold;
+    margin-left: 20px;
+}
+.c-titulo-personaN{
+ font-size:44px;
+ color:$blanco;
+ text-align: left;
+ margin-left:20px;
+ font-family:$KumbhSans-bold;
+ margin-right: 38%;
+ margin-top:60px;
+ margin-bottom: 100px;
+}
+.c-titulo-empresa{
+    font-size:44px;
+    color:$verde2;
+    text-align: left;
+    margin-left:20px;
+    font-family:$KumbhSans-bold;
+    margin-top:10px;
+    margin-bottom: 100px;
+   }
+.c-titulo-empresa:hover,
+.c-titulo-empresa:focus{
+    font-size:54px;
+    opacity: 0.5;
+}
+
+
+.c-subtitulo-mensaje{
+    font-size:12px;
+    color:$blanco;
+    margin-top:40px;
+    text-align: left;
+    margin-bottom: 60px;
+    margin-left:20px;
+    margin-right:20px;
+}

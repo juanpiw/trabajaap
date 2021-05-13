@@ -1,0 +1,67 @@
+<!--lista de ofertas-->
+<div class="contenedor_lista-busqueda">
+   <div class="contenido">
+    <p class="titulo-sec-destacados">Destacados</p>
+   </div>
+<div>
+   <!--lista de selecciones-->
+</div>
+<ion-row class="contenedor-padre-selecion">
+   <ion-col >
+      <div class="seleccion-oferta">
+      <p class="seleccion-oferta">Todos</p>
+      <p class="seleccion-oferta">Trabajos</p>
+      <p class="seleccion-oferta">Persona</p>
+      <p class="seleccion-oferta">Recientes</p>
+      </div>
+   </ion-col>
+</ion-row>
+ <!--seleccionados  TODO CREAR NGFOR--> 
+<ion-row (click)="irAdetalleUsuario()"  class="c-seleccion-persona">
+ <ion-col size="2">
+   <img src="/assets/icon/icn_ubicacion1.svg" alt="volver" class="c-icono-seleccio">
+ </ion-col>
+ <ion-col size="8">
+  <div class="titulo_nombre-seleccion">Juan Pablo M</div>
+  <div  class="subtitulo_nombre-seleccion">Desarrollador Front</div>
+ </ion-col>
+ <ion-col size="2">
+   <img src="/assets/icon/icn_ubicacion1.svg" alt="volver" class="c-icono-seleccio">
+ </ion-col>
+</ion-row>
+
+<ion-row (click)="irAdetalleUsuario()" class="c-seleccion-persona">
+   <ion-col size="2">
+     <img src="/assets/icon/icn_ubicacion2.svg" alt="volver" class="c-icono-seleccio">
+   </ion-col>
+   <ion-col size="8">
+    <div class="titulo_nombre-seleccion">Diseñador UX/UI</div>
+    <div  class="subtitulo_nombre-seleccion">Academia mac</div>
+   </ion-col>
+   <ion-col size="2">
+     <img src="/assets/icon/icn_ubicacion2.svg" alt="volver" class="c-icono-seleccio">
+   </ion-col>
+  </ion-row>
+
+  <ion-row (click)="irAdetalleUsuario()"  class="c-seleccion-persona">
+   <ion-col size="2">
+     <img src="/assets/icon/icn_ubicacion1.svg" alt="volver" class="c-icono-seleccio">
+   </ion-col>
+   <ion-col size="8">
+    <div class="titulo_nombre-seleccion">david M</div>
+    <div  class="subtitulo_nombre-seleccion">Desarrollador Front</div>
+   </ion-col>
+   <ion-col size="2">
+     <img src="/assets/icon/icn_ubicacion1.svg" alt="volver" class="c-icono-seleccio">
+   </ion-col>
+  </ion-row>
+  <ion-row>
+     <ion-col class="c-centrar-desplegar">
+      <img src="/assets/icon/icn_desplegar.svg" alt="volver" class="c-icono-seleccio">
+     </ion-col>
+  </ion-row>
+
+   <!--seleccionados OFERTAS FILTRO MODALIDAD TODO CREAR NGFOR--> 
+
+
+</div>

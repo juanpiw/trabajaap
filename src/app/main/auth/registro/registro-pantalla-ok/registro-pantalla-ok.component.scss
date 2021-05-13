@@ -1,0 +1,93 @@
+@import "../../../../../../src/assets/scss/settings/color";
+@import "../../../../../../src/assets/scss/settings/fonts";
+
+.c-empresa{
+    background-color:$verde;
+    height: 100%;
+}
+.c-persona{
+    background-color:$morado1;
+    height: 100%;
+}
+
+.c-logo{
+    padding-top: 20px;
+    margin-top:20px;
+    display: block;
+    width: 100px;
+    margin: auto;
+    float: right;
+    margin-right:20px;
+}
+.c-titulo_bienvenida{
+    
+    font-size: 24px;
+    color:$verde2;
+    font-family: $KumbhSans-bold;
+}
+.c-titulo_nombre{
+    font-size: 24px;
+    color:$blanco;
+    font-family: $KumbhSans-bold;
+}
+.c-contenedor-titulo{
+    margin-top:120px;
+    text-align: center;
+    margin-bottom: 20;
+}
+.c-contenedor-mensaje{
+
+    text-align: center;
+    margin-top:60px;
+    margin-left:14px;
+    margin-right:20px;
+}
+.c-texto-correo{
+    margin-top:6px;
+    font-size: 22px;
+    font-family: $KumbhSans-bold;
+    color:$verde2;
+    margin-bottom: 6px;
+}
+.c-texto-enviamos{
+    font-size: 16px;
+    font-family: $KumbhSans-regular;
+    color:$blanco;
+}
+.f-w{
+    font-weight: 600;
+    font-size: 18px!important;
+}
+
+.c-btn-form1{
+    margin-top: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background:$blanco;
+    text-align: center;
+    padding-top: 10px;
+    width: 100%;
+    color:$morado1;
+    width: 100%;
+}
+.c-contenedor{
+    margin-left:16px;
+    margin-right:16px;
+}
+
+
+
+
+
+.c-btn-form-volver{
+    margin-top: 20px;
+    height: 40px;
+    border-radius: 20px;
+    background:transparent;
+    text-align: center;
+    padding-top: 10px;
+    width: 100%;
+    color:$blanco;
+    width: 100%;
+    border: solid 1px #fbfbfb;
+}

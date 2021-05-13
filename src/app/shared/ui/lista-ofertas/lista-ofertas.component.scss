@@ -1,0 +1,56 @@
+
+@import "../../../../../src/assets/scss/settings/color";
+@import "../../../../../src/assets/scss/settings/fonts";
+@import "../../../../../src/assets/scss/utilities/margenes";
+
+.contenedor_lista-busqueda{
+    height: 120%;
+    background-color: $blanco;
+    width: 100%;
+}
+
+.c-lista{
+    height: 200px;
+}
+.titulo-sec-destacados{
+    font-size: 24px;
+    color:$gris;
+    text-align: center;
+    font-family: KumbhSans-Bold;
+}
+.seleccion-oferta{
+    display: inline;
+    color: #696565;
+    margin: 6px;
+    font-size: 14px;
+    
+}
+.contenedor-padre-selecion{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+.c-icono-seleccio{
+    width: 20px;
+    height: 20px;
+}
+.c-seleccion-persona{
+    margin-top:20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid  #e4e4e4;
+}
+.titulo_nombre-seleccion{
+    font-size: 18px;
+    font-family: KumbhSans-Bold;
+    color: #696565;
+}
+.subtitulo_nombre-seleccion{
+    font-size: 12px;
+    font-family: KumbhSans-regular;
+    color: #696565;
+}
+.c-centrar-desplegar{
+    display: block;
+    margin: auto;
+    text-align: center;
+}

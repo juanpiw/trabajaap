@@ -1,0 +1,99 @@
+@import "../../../../../src/assets/scss/settings/color";
+@import "../../../../../src/assets/scss/settings/fonts";
+@import "../../../../../src/assets/scss/utilities/margenes";
+
+
+.c-contenedor-caja-ofertas{
+background-color: $blanco;
+height: 100%;
+}
+
+
+
+.c-caja__ofertas{
+    background-color: #E63780;
+    height: 110px;
+    border-radius: 8px;
+    border-radius: 8px;
+    width: 100%;
+    display: block;
+    margin: auto;
+
+}
+.titulo-sec-oferta{
+    font-size: 24px;
+    color:#c3c3c3;
+    text-align: center;
+    font-family: KumbhSans-Bold;
+}
+.c-caja__descuentos{
+    background-image:linear-gradient(180deg,   $morado2,$morado1,);
+    height: 110px;
+    border-radius: 8px;
+    border-radius: 8px;
+    width: 100%;
+    display: block;
+    margin: auto;
+    margin-top:14px;
+}
+.c-icono-personaje{
+    margin-top:-13px;
+    width: 94px;
+}
+.titulo_grandes-ofertas{
+    margin-top:26px;
+    font-size: 20px;
+    font-family: KumbhSans-Bold;
+    color:$blanco;
+    margin-left:20px;
+    
+}
+.fecha_grandes_ofertas{
+    margin-top:10px;
+    font-size: 14px;
+    font-family: KumbhSans-regular;
+    color:$blanco;
+    margin-left:20px;
+}
+.c-icono-vip{
+    width: 45px;
+    height: 43px;
+
+}
+.barra-division{
+    height: 110px;
+    width: 2px;
+    background-color: $blanco;
+    display: block;
+    margin: auto;
+    margin-top:-117px;
+   
+
+}
+.titulo-desceunto{
+    font-family: KumbhSans-Bold;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 8px;
+
+}
+.descuento_valor{
+    font-family: KumbhSans-Bold;
+    font-size: 50px;
+    margin:auto;
+    text-align: center;
+}
+.contenedor-vip{
+    display: inline;
+}
+.c-titulo-vip{
+    font-family: KumbhSans-Bold;
+    font-size: 14px;
+    text-align: center;
+}
+.c-titulo-valor{
+    font-size: 56px;
+    color:$blanco;
+    font-family: KumbhSans-Bold;
+}

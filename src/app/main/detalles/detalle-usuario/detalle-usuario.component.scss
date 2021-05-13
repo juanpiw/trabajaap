@@ -1,0 +1,126 @@
+@import "../../../../../src/assets/scss/settings/color";
+@import "../../../../../src/assets/scss/settings/fonts";
+@import "../../../../../src/assets/scss/utilities/margenes";
+
+
+
+
+.c-contenedor-modal{
+    background-color: white;
+    height: 100%;
+}
+.c-header-volver{
+    height: 70px;
+    background-color: $morado1;
+}
+.c-texto-volver{
+    font-size: 16px;
+    color:$blanco;
+    font-family: $KumbhSans-bold;
+    padding-top: 22px;
+}
+.img-icono{
+    padding-top: 22px
+}
+.tarjeta{
+    margin-top:20px;
+    width: 100%;
+    border-radius: 8px;
+    -webkit-box-shadow: 4px 4px 12px #dedede;
+    -moz-box-shadow: 4px 4px 12px #dedede;
+    box-shadow: 4px 4px 12px #dedede;
+} 
+.grilla{
+    padding-left:20px;
+    padding-right:20px;
+}
+.c-btn-mensaje{
+    width: 100%;
+    background-color:$morado1 ;
+    border-radius: 22px;
+    height: 40px;
+    color:$blanco;
+    text-align: center;
+    padding-top: 7px;
+    
+}
+.c-btn-mensaje-outline{
+    width: 100%;
+    background-color:$blanco ;
+    border-radius: 22px;
+    height: 40px;
+    color:$morado1;
+    text-align: center;
+    padding-top: 7px;
+    border: solid 1px $morado1; 
+}
+.c-btn-volver{
+    background: #ffff;
+    border-radius: 40px;
+    color: #7e6ad1;
+    font-size: 18px;
+    border: solid 1px #7e6ad1;
+    height: 40px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.c-titulo-usuario{
+    font-size: 22px;
+    color:$azuloscuro;
+    text-align: center;
+    font-family: $KumbhSans-bold;
+
+}
+.c-valoracion{
+    width: 40px;
+}
+.c-subtitulo-usuario{
+    font-size: 13px;
+    color:$gris2;
+    text-align: center;
+    font-family: $KumbhSans-regular;
+}
+.c-btn-cv{
+    width: 80px;
+    height: 30px;
+    border-radius: 16px;
+    background-color:  #7e6ad1;
+    display: block;
+    margin: auto;
+    color:$blanco;
+    font-size: 13px;
+    text-align: center;
+    padding-top: 5px;
+}
+.linea-1{
+    color:$gris1;
+   height: 1px;
+   background-color:$gris1;
+   margin-left:22px;
+   margin-right:22px;
+   margin-top:14px;
+   margin-bottom: 12px;
+}
+.c-titulo-datos{
+    color:$gris1;
+    font-size: 12px;
+    font-family: $KumbhSans-regular;
+    text-align: center;
+}
+.c-subtitulo-datos{
+    margin-top:10px;
+    margin-bottom: 10px;
+    color:$azuloscuro;
+    font-size: 14px;
+    font-family: $KumbhSans-regular;
+    text-align: center;
+}
+.c-recomendaciones{
+    font-size: 12px;
+    font-family: $KumbhSans-regular;
+    color: $morado1;
+    text-align: center;
+    margin-top:20px;
+    margin-bottom: 40px;
+}

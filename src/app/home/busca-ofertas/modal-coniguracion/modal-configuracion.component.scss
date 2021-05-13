@@ -1,0 +1,23 @@
+
+@import "../../../../../src/assets/scss/settings/color";
+@import "../../../../../src/assets/scss/settings/fonts";
+@import "../../../../../src/assets/scss/utilities/margenes";
+@import "../../../../../src/assets/scss/componentes/btnscroll";
+@import "../../../../../src/assets/scss/componentes/cardofertas";
+
+.c-contendedor{
+    background-color: white;
+    height: 100%;
+    
+}
+.cerrarv2{
+    width: 30px;
+    height: 30px;
+    float: right;
+}
+.configura-busqueda{
+    color:$morado2;
+    text-align: center;
+    font-size: 22px;
+    font-family:$KumbhSans-bold
+}

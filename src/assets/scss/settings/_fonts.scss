@@ -1,0 +1,30 @@
+/*
+  ===================================================
+  ** Font-family: Bold, Regular  Light ***
+  ===================================================
+ } */
+
+ $KumbhSans-bold: KumbhSans-Bold;
+ $KumbhSans-regular: KumbhSans-Regular;
+ $KumbhSans-light: KumbhSans-Light;
+
+ @font-face {
+   font-family: 'KumbhSans-Bold';
+   src:  url('/assets/font/KumbhSans-Bold.ttf') format('opentype');
+   font-weight: bold;
+   font-style: normal;
+ }
+
+ @font-face {
+   font-family: 'KumbhSans-Regular';
+   src:  url('/assets/font/KumbhSans-Regular.ttf') format('opentype');
+   font-weight: normal;
+   font-style: normal;
+ }
+
+ @font-face {
+   font-family: 'KumbhSans-Light';
+   src:  url("/assets/font/KumbhSans-Light.ttf") format('opentype');
+   font-weight: normal;
+   font-style: normal;
+ }

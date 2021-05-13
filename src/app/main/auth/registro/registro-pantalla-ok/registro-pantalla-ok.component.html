@@ -1,0 +1,50 @@
+<ion-app>
+  <ion-content [fullscreen]="true">
+    <div [ngClass]="{'c-empresa':usuarioEmpresa,'c-persona':!usuarioEmpresa}">
+    <ion-row>
+      <ion-col>
+        <ion-col>
+          <img src="/assets/icon/logo.svg" alt="trabaj" class="c-logo">
+        </ion-col>
+      </ion-col>
+    </ion-row>
+    <!--=========caso exito =============-->
+    <div *ngIf="!errorPeticion">
+    <ion-row>
+      <ion-col class="c-contenedor-titulo">
+        <div class="c-titulo_bienvenida">¡Bienvenido, <span class="c-titulo_nombre">{{nombreUsuario}}!</span></div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="c-contenedor-mensaje">
+      <div class="c-texto-enviamos">Te enviamos un email a:</div>
+      <div class="c-texto-correo">{{correoUsuario}}</div>
+      <div class="c-texto-enviamos f-w">Activa tu cuenta y busca oportunidades</div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="c-contenedor">
+        <div (click)="irAlHome();" class="c-btn-form1">Entendido</div>
+      </ion-col>
+    </ion-row>
+    </div>
+     <!--=========caso error =============-->
+     <div *ngIf="errorPeticion">
+     <ion-row>
+       <ion-col>
+         <div>¡Error!</div>
+         <div>ups! algo salio mal</div>
+         <div>vuelve a intentarlo</div>
+       </ion-col>
+     </ion-row>
+     <ion-row>
+      <ion-col class="c-contenedor">
+        <div (click)="irAlHome();" class="c-btn-form1">Reintentar</div>
+        <div (click)="volver();" class="c-btn-form-volver">volver</div>
+      </ion-col>
+    </ion-row>
+  </div>
+  </div>
+   
+  </ion-content>
+</ion-app>

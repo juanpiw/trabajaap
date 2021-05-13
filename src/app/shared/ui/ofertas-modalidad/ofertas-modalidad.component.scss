@@ -1,0 +1,32 @@
+
+@import "../../../../../src/assets/scss/settings/color";
+@import "../../../../../src/assets/scss/settings/fonts";
+@import "../../../../../src/assets/scss/utilities/margenes";
+
+ion-toolbar{
+    --background:white;
+   
+    --color: #7e6ad1;
+    border-radius: 12px;
+   
+}
+ion-segment-button{
+    font-size: 12px;
+    --background:#7e6ad1;
+}
+.titulo{
+    color:black;
+    font-size: 18px;
+}
+
+.c-caja-tarjeta{
+    margin-top:20px;
+    margin-bottom: 20px;
+    width:100%;
+    height: 158px;
+    border-radius: 12px;
+    background-color: $blanco;
+    -webkit-box-shadow: 4px 4px 12px #dedede;
+    -moz-box-shadow: 4px 4px 12px #dedede;
+    box-shadow: 4px 4px 12px #dedede;
+}

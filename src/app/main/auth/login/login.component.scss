@@ -1,0 +1,186 @@
+@import "../../../../../src/assets/scss/settings/color";
+@import "../../../../../src/assets/scss/settings/fonts";
+@import "../../../../../src/assets/scss/utilities/margenes";
+.c-empresa{
+    background-color:$blanco;
+    height: 100%;
+}
+.c-persona{
+    background-color:$blanco;
+    height: 100%;
+}
+.c-logo-t{
+    width: 60px;
+   
+    display:block;
+    margin: auto;
+    margin-top:60px;
+    margin-bottom: 36px!important
+
+}
+.m-top-60{
+    margin-top:60px;
+}
+.m-top-20{
+    margin-top:20px;
+}
+.c-icn-back{
+    margin-top:20px;
+    width: 25px;
+    height: 50px;
+    margin-left:20px;
+    display: block;
+    text-align: left;
+}
+.c-header{
+    width: 100%;
+    height: 54px;
+    background-color:$blanco;
+    background:$blanco;; 
+}
+.c-titulo{
+    font-size: 20px;
+    color:  $gris2;
+}
+.c-titulo-2{
+    font-size: 14px;
+    color: $gris;
+}
+.form{
+    font-size: 16px;
+    width: 100%;
+    position: relative;
+    height: 50px;
+    overflow:hidden; 
+}
+.form input{
+    width: 100%;
+    height: 100%;
+    color:  $gris2;
+    padding-top:20px;
+    background-color:$blanco;
+    border: none;
+}
+
+.form label{
+    position: absolute;
+    bottom: 0px;
+    left:0%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    color:$gris2;
+    border-bottom: 1px solid $gris2;
+}
+.form label::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid $verde;
+    left:0px;
+    bottom: -1px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+.content-name{
+    position: absolute;
+    bottom: 5px;
+    left:0px;
+    transition:all 0.3s ease;
+}
+.form input:focus + .label-name .content-name,
+form input:valid + .label-name .content-name {
+    transform:translateY(-150%);
+    border: none;
+    color:$verde;
+    font-size: 14px;
+    
+}
+
+.form input:focus + .label-name::after,
+.form input:valid + .label-name::after{
+    transform: translateY(0%);
+   
+}
+
+
+input::placeholder{
+    padding-left: 40px;
+    opacity: 0;
+    transform: translateX(10%);
+}
+input:focus{
+    outline: none;
+    border: 0px;
+}
+input:focus,
+input::placeholder {
+   opacity: 1;
+    font-size:16px;
+    transform: translateX(0%);
+   
+  }
+
+
+.c-contenedor{
+    margin-left:14px;
+    margin-right:14px;
+}
+
+.c-colum{
+    height: 80px;
+}
+.c-btn-form1{
+    margin-top: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #a26cc8,#4d6cec);
+    text-align: center;
+    padding-top: 6px;
+    width: 100%;
+
+}
+
+.c-olvidaste{
+    color: $gris;
+    font-size: 14px;
+    text-align: right;
+    display: block;
+}
+.c-invalid-pass{
+    color:red;
+    font-size: 12px;
+}
+.c-ok-valid{
+    width: 14px;
+    position: absolute;
+    z-index: 1;
+    margin-top: -20px; 
+    
+}
+.img-valid{
+    display: block;
+    justify-content: right;
+    text-align: right;
+    margin-right: 14px;
+}
+
+/* Change the white to any color ;) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+/*Change text in autofill textbox*/
+input:-webkit-autofill {
+    -webkit-text-fill-color:$gris2 !important;
+}
+
+ input.ng-invalid.ng-touched{
+  
+        border-bottom: 3px solid red!important;
+        left:0px;
+       
+}

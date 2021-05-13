@@ -1,0 +1,77 @@
+<ion-app>
+  <ion-content [fullscreen]="true">
+    <ion-grid [ngClass]="{'c-empresa':!usuarioEmpresa,'c-persona':usuarioEmpresa}">
+      <div (click)="volver();" class="c-c-header">
+        <img src="/assets/icon/icn_back.svg" alt="volver" class="c-icn-back">
+      </div>
+      <div class="c-contenedor">
+        <ion-row>
+          <ion-col>
+            <div *ngIf="usuarioEmpresa">
+              <img src="/assets/icon/logo_circulo_login.svg" alt="trabaj" class="c-logo-t">
+            </div>
+            <div *ngIf="!usuarioEmpresa">
+              <img src="/assets/icon/logo_circulo.svg" alt="trabaj" class="c-logo-t">
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="12">
+            <div class="c-titulo">¡Hola!</div>
+          </ion-col>
+          <ion-col size="12">
+            <div class="c-titulo-2">Inicia sesión para continuar</div>
+          </ion-col>
+        </ion-row>
+        <!--==============-->
+        <!--campo-email----->
+        <!--==============-->
+        <form [formGroup]="dataLogin" (ngSubmit)="onSubmit(dataLogin)">
+          <ion-row>
+            <ion-col size="12">
+              <div class="form m-top-60">
+                <input formControlName="email" type="email" placeholder="" name="name" autocomplete="new-text"
+                  required />
+                <label for="name" class="label-name">
+                  <Span class="content-name ">Email</Span>
+                </label>
+              </div>
+              <div *ngIf="verIcnInput" class="img-valid">
+                <img *ngIf="!verIcnValid" src="/assets/icon/icn-error.svg" alt="trabaj" class="c-ok-valid">
+                <img *ngIf="verIcnValid" src="/assets/icon/icn-ok.svg" alt="trabaj" class="c-ok-valid">
+              </div>
+              <div *ngIf="!dataLogin.get('email').valid && dataLogin.get('email').touched " class="c-invalid-pass">
+                Ingresa un email valido</div>
+              <!--==============-->
+              <!--campo-password-->
+              <!--==============-->
+              <div class="form  m-top-20">
+                <input type="{{tipeInput}}" formControlName="password" id="contrasena" placeholder="" name="name"
+                  autocomplete="new-text" required />
+                <label for="name" class="label-name ">
+                  <Span class="content-name ">Contraseña</Span>
+                </label>
+              </div>
+              <div class="img-valid">
+                <img (click)="verPass();" src="/assets/icon/icn_ojo_cerrado.svg" alt="trabaj" class="c-ok-valid">
+              </div>
+              <div *ngIf="!dataLogin.get('password').valid && dataLogin.get('password').touched "
+                class="c-invalid-pass">Ingresa una contraseña valida</div>
+            </ion-col>
+          </ion-row>
+        </form>
+        <ion-row>
+          <ion-col>
+            <div (click)="irArecuperar()" class="c-olvidaste">¿Olvidaste tu contraseña?</div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <!--<ion-button class="c-btn-form1" (click)="onSumit()" expand="full" type="submit" value="Ingresar" shape="round">Ingresar</ion-button>-->
+            <div class="c-btn-form1" (click)="onSumit()" value="Ingresar"> Ingresar</div>
+          </ion-col>
+        </ion-row>
+      </div>
+    </ion-grid>
+  </ion-content>
+</ion-app>

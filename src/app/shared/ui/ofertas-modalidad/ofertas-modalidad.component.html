@@ -1,0 +1,137 @@
+<ion-toolbar>
+    <ion-segment [(ngModel)]="category" >
+        <ion-segment-button  (click)="cambioFulltime();" value="fullTime">
+            Full time
+        </ion-segment-button>
+        <ion-segment-button  (click)="cambioPartime();" value="partTime">
+            Part time
+        </ion-segment-button>
+        <ion-segment-button  (click)="cambioTeletrabajo();" value="telejob">
+            Teletrabajo
+        </ion-segment-button>
+
+    </ion-segment>
+</ion-toolbar>
+<ng-container [ngSwitch]="category">
+    <div *ngSwitchCase="'fullTime'">
+        <!--todo sacar por ngfor-->
+        <div class="c-caja-tarjeta">
+            <ion-row>
+                <ion-col size="9">
+                    <div class="titulo-card-puesto">Desarrollador Front</div>
+                </ion-col>
+                <ion-col  (click)="irAdetalleEmpresa()" size="3">
+                    <div class="titulo-card-empresa">Everis</div>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col size="8">
+                    <div class="monto-ofrecido">$1.220.000</div>
+                </ion-col>
+                <ion-col size="4">
+                    <div (click)="irAdetalleOferta()" class="btn-detalles">Detalles</div>
+                </ion-col>
+            </ion-row>
+        </div>
+        <div class="c-caja-tarjeta">
+            <ion-row>
+                <ion-col size="9">
+                    <div class="titulo-card-puesto">Desarrollador Back</div>
+                </ion-col>
+                <ion-col (click)="irAdetalleEmpresa()" size="3">
+                    <div class="titulo-card-empresa">Everis</div>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col size="8">
+                    <div class="monto-ofrecido">$1.420.000</div>
+                </ion-col>
+                <ion-col size="4">
+                    <div (click)="irAdetalleOferta()" class="btn-detalles">Detalles</div>
+                </ion-col>
+            </ion-row>
+        </div>
+        <div class="c-caja-tarjeta">
+            <ion-row>
+                <ion-col size="9">
+                    <div class="titulo-card-puesto">Diseñador UX/UI</div>
+                </ion-col>
+                <ion-col  (click)="irAdetalleEmpresa()" size="3">
+                    <div class="titulo-card-empresa">Everis</div>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col size="8">
+                    <div class="monto-ofrecido">$1.320.000</div>
+                </ion-col>
+                <ion-col size="4">
+                    <div (click)="irAdetalleOferta()" class="btn-detalles">Detalles</div>
+                </ion-col>
+            </ion-row>
+        </div>
+        
+    </div>
+</ng-container>
+<ng-container [ngSwitch]="category">
+    <div *ngSwitchCase="'partTime'">
+        <div class="c-caja-tarjeta">
+            <ion-row>
+                <ion-col size="9">
+                    <div class="titulo-card-puesto">UX/UI</div>
+                </ion-col>
+                <ion-col (click)="irAdetalleEmpresa()" size="3">
+                    <div  class="titulo-card-empresa">Everis</div>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col size="8">
+                    <div class="monto-ofrecido">$1.320.000</div>
+                </ion-col>
+                <ion-col size="4">
+                    <div (click)="irAdetalleOferta()" class="btn-detalles">Detalles</div>
+                </ion-col>
+            </ion-row>
+        </div>
+        <div class="c-caja-tarjeta">
+            <ion-row>
+                <ion-col size="9">
+                    <div class="titulo-card-puesto">Developer</div>
+                </ion-col>
+                <ion-col (click)="irAdetalleEmpresa()" size="3">
+                    <div class="titulo-card-empresa">Everis</div>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col size="8">
+                    <div class="monto-ofrecido">$1.720.000</div>
+                </ion-col>
+                <ion-col size="4">
+                    <div (click)="irAdetalleOferta()" class="btn-detalles">Detalles</div>
+                </ion-col>
+            </ion-row>
+        </div>
+    </div>
+</ng-container>
+<ng-container [ngSwitch]="category">
+    <div *ngSwitchCase="'telejob'">
+        <div class="c-caja-tarjeta">
+            <ion-row>
+                <ion-col size="9">
+                    <div class="titulo-card-puesto">Diseñador UX/UI</div>
+                </ion-col>
+                <ion-col  (click)="irAdetalleEmpresa()" size="3">
+                    <div class="titulo-card-empresa">Everis</div>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col size="8">
+                    <div class="monto-ofrecido">$1.820.000</div>
+                </ion-col>
+                <ion-col size="4">
+                    <div  (click)="irAdetalleOferta()" class="btn-detalles">Detalles</div>
+                </ion-col>
+            </ion-row>
+        </div>
+        
+    </div>
+</ng-container>

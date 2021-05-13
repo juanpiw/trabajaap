@@ -1,0 +1,108 @@
+<ion-app>
+  <ion-content>
+    <ion-grid [ngClass]="{'c-empresa':usuarioEmpresa,'c-persona':!usuarioEmpresa}">
+      <!--header-->
+      <div (click)="volver();" class="c-c-header">
+        <img src="/assets/icon/icn_back.svg" alt="volver" class="c-icn-back">
+      </div>
+      <!--header-->
+      <div class="c-contenedor">
+        <ion-row>
+          <ion-col>
+            <div>
+              <img src="/assets/icon/logo_circulo_login.svg" alt="trabaj" class="c-logo-t">
+            </div>
+          </ion-col>
+        </ion-row>
+      </div>
+      <div>
+        <!--formulario-->
+        <!--==============-->
+        <div class="grilla">
+        <form  [formGroup]="dataRegistro" (ngSubmit)="onSubmit(dataLogin)">
+          <ion-row>
+            <ion-col size="12">
+              <!--======= Nombre=======-->
+              <div class="form m-top-60">
+                <input   formControlName="nombres" type="text" placeholder="" name="name" autocomplete="new-text" required />
+                <label for="name" class="label-name">
+                  <Span class="content-name ">Nombres</Span>
+                </label>
+              </div>
+              <div *ngIf="verIcnInput" class="img-valid">
+                <img *ngIf="!verIcnValid" src="/assets/icon/icn-error.svg" alt="trabaj" class="c-ok-valid">
+                <img *ngIf="verIcnValid" src="/assets/icon/icn-ok.svg" alt="trabaj" class="c-ok-valid">
+              </div>
+              <div *ngIf="true" class="c-invalid-pass">
+                Ingresa nombres validos</div>
+  
+              <!--======= Apellido =======-->
+              <div class="form m-top-60">
+                <input formControlName="apellidos" type="text" placeholder="" name="name" autocomplete="new-text" required />
+                <label for="name" class="label-name">
+                  <Span class="content-name ">Apellidos</Span>
+                </label>
+              </div>
+              <div *ngIf="verIcnInput" class="img-valid">
+                <img *ngIf="!verIcnValid" src="/assets/icon/icn-error.svg" alt="trabaj" class="c-ok-valid">
+                <img *ngIf="verIcnValid" src="/assets/icon/icn-ok.svg" alt="trabaj" class="c-ok-valid">
+              </div>
+              <div *ngIf="true " class="c-invalid-pass">
+                Ingresa apellidos validos</div>
+  
+              <!--======= email =======-->
+              <div class="form m-top-60">
+                <input formControlName="email" type="email" placeholder="" name="name" autocomplete="new-text" required />
+                <label for="name" class="label-name">
+                  <Span class="content-name ">Email</Span>
+                </label>
+              </div>
+              <div *ngIf="verIcnInput" class="img-valid">
+                <img *ngIf="!verIcnValid" src="/assets/icon/icn-error.svg" alt="trabaj" class="c-ok-valid">
+                <img *ngIf="verIcnValid" src="/assets/icon/icn-ok.svg" alt="trabaj" class="c-ok-valid">
+              </div>
+              <div *ngIf="true" class="c-invalid-pass">
+                Ingresa un email valido</div>
+              <!--==============-->
+              <!--campo-password-->
+              <!--==============-->
+              <div class="form  m-top-20">
+                <input type="{{tipeInput}}" formControlName="password" id="contrasena" placeholder="" name="name"
+                  autocomplete="new-text" required />
+                <label for="name" class="label-name ">
+                  <Span class="content-name ">Contraseña</Span>
+                </label>
+              </div>
+              <div class="img-valid">
+                <img (click)="verPass();" src="/assets/icon/icn_ojo_cerrado.svg" alt="trabaj" class="c-ok-valid">
+              </div>
+              <div *ngIf="true"
+                class="c-invalid-pass">Ingresa una contraseña valida</div>
+              <!--==============-->
+              <!--campo-repetir-password-->
+              <!--==============-->
+              <div class="form  m-top-20">
+                <input type="{{tipeInput}}" formControlName="repertirpassword" id="contrasena" placeholder="" name="name"
+                  autocomplete="new-text" required />
+                <label for="name" class="label-name ">
+                  <Span class="content-name ">Contraseña</Span>
+                </label>
+              </div>
+              <div class="img-valid">
+                <img (click)="verPass();" src="/assets/icon/icn_ojo_cerrado.svg" alt="trabaj" class="c-ok-valid">
+              </div>
+              <div *ngIf="true"
+                class="c-invalid-pass">las contraseñas no coinciden</div>
+            </ion-col>
+          </ion-row>
+        </form>
+     <ion-row>
+       <ion-col>
+        <div class="c-btn-form1" (click)="onSumit()" value="Ingresar"> Finalizar</div>
+       </ion-col>
+     </ion-row>
+    </div>
+      </div>
+    </ion-grid>
+  </ion-content>
+  </ion-app>

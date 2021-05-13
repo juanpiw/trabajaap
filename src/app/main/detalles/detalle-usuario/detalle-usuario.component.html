@@ -1,0 +1,74 @@
+<ion-content>
+  <!--volver-->
+  <ion-row class="c-header-volver">
+    <ion-col (click)="volver()" size="1">
+      <img src="/assets/icon/icn_back.svg" alt="volver" class="img-icono">
+    </ion-col>
+    <ion-col size="3">
+      <div class="c-texto-volver">volver</div>
+      </ion-col>
+  </ion-row>
+    
+  
+  <ion-grid class="c-contenedor-modal grilla">
+    <!--tarjeta-->
+    <div class="tarjeta">
+      <ion-row>
+        <ion-col><!--avatar-->
+          <app-avatar></app-avatar>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col> <!--valoracion-->
+            <app-valoracion></app-valoracion> 
+        </ion-col>
+      </ion-row>
+      <ion-row> <!--Nombre USUARIO-->
+        <ion-col size="12">
+          <div class="c-titulo-usuario">Juan Pablo M.</div>
+        </ion-col>
+        <ion-col size="12">
+          <div class="c-subtitulo-usuario">Fundador Trabajaap</div>
+        </ion-col>
+      </ion-row>
+      <ion-row> <!--VER CV-->
+        <ion-col>
+         <div class="c-btn-cv"
+         > ver CV</div>
+        </ion-col>
+      </ion-row>
+      <div class="linea-1"></div>
+      <ion-row>
+        <ion-col size="12">
+          <div class="c-titulo-datos">Numero de contacto</div>
+          <div class="c-subtitulo-datos">+5698484332</div>
+        </ion-col>
+        <ion-col size="12">
+          <div class="c-titulo-datos">Email</div>
+          <div class="c-subtitulo-datos">juanpablojpw@gmail.com</div>
+        </ion-col>
+        <ion-col size="12">
+          <div class="c-titulo-datos">Dirección</div>
+          <div class="c-subtitulo-datos">av.america colon 3344</div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <div class="c-recomendaciones">Recomendaciones</div>
+        </ion-col>
+      </ion-row>
+    </div>
+    <!--tarjeta-->
+    <!--btns-->
+    <ion-row>
+      <ion-col  class="m-top-20" size="12">
+      <div class="c-btn-mensaje">Mensaje</div>
+      </ion-col>
+      <ion-col (click)="volver()" class="m-top-14" size="12">
+        <div  class="c-btn-volver">Volver</div>
+      </ion-col>
+
+     
+    </ion-row>
+  </ion-grid>
+</ion-content>

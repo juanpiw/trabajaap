@@ -1,0 +1,103 @@
+
+@import "../../../../../src/assets/scss/settings/color";
+@import "../../../../../src/assets/scss/settings/fonts";
+@import "../../../../../src/assets/scss/utilities/margenes";
+
+
+ion-slides{
+    height:100%;
+       
+}
+.c-selider_diapo1{
+    background-color:$morado1;
+    height: 100%;
+    
+}
+.c-selider_diapo2{
+    background-color:$morado1;
+    height: 100%;
+}
+.c-selider_diapo3{
+    background-color:$azuloscuro;
+    height: 100%;
+}
+
+.c-logo{
+    width: 80px;
+    margin-left:10px;
+    margin-top:20px;
+    text-align: left;
+    display: block;
+}
+
+.c-img__slider{
+    width: 250px;
+    margin-top: 18px;
+  
+}
+.c-titulo_slider1{
+    font-size: 54px;
+    font-family: $KumbhSans-bold;
+    color:$blanco;
+    text-align: left;
+    margin-left: 20px;
+}
+.c-subtitulo_slider1{
+    font-family: $KumbhSans-regular;
+    color:$blanco;
+    font-size: 12px;
+    margin-top:10px;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.c-omitir{
+    font-family: $KumbhSans-bold;
+    font-size: 12px;
+    text-align: right;
+    margin-right: 20px;
+}
+.c-padding-general{
+    padding-left:20px;
+    padding-right:20px;
+}
+.c-siguiente{
+    width: 16px;
+    margin-left: -6px;
+    position: absolute;
+    z-index: 1;
+    margin-top: -1px;
+
+}
+
+.c-subtitulo_slider3{
+    font-family: $KumbhSans-regular;
+    color:$blanco;
+    font-size: 12px;
+    margin-top:10px;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.c-omitir-icn{
+    font-family: $KumbhSans-bold;
+    font-size: 12px;
+    text-align: right;
+    margin-top: -16px;
+}
+.p-img{
+    padding-top:10px;
+}
+.c-distancia-btn-seguir{
+    margin-top:-20px;
+}
+.circulo {
+    width: 30px;
+    height: 30px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background:$morado1;
+    margin-top: 10px;
+}

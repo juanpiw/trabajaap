@@ -1,0 +1,97 @@
+
+<ion-app>
+  <ion-content [fullscreen]="true">
+    <ion-grid class="c-contenedor-b no-padding no-margin">
+      <div class="c-header-backgraund">
+        <!--header-->
+
+        <ion-row>
+          <ion-col (click)="mostraMenu();" size="6">
+            <img src="/assets/icon/icn_ambur.svg" alt="resumen" class="ambur">
+          </ion-col>
+          <ion-col size="6">
+            <div class="c-notificaciones">
+              <img src="/assets/icon/icn_notificaciones.svg" alt="resumen" class="c-notifica">
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <p class="c-titulo-bienvenida">¡Hola, <span class="c-titulo-nombre">Juan Pablo!</span></p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <div class="togle-ubica">
+            <ion-toggle color="danger"></ion-toggle>
+          </div>
+          
+        </ion-row>
+      </div>
+      <div class="linea-divisoria"></div>
+      <div class="c-conentedor-img">
+        <img src="/assets/icon/icn_perfil_vacio.svg" alt="resumen" class="c-perfil-vacio">
+      </div>
+      <div>
+        <app-valoracion></app-valoracion>
+      </div>
+
+      <!--secc-buscqueda-->
+      <!--==============-->
+      <ion-row>
+        <ion-col class="m-top-20" size="6">
+        <div (click)="irOfertas()" class="caja-busqueda">
+          <ion-row>
+            <ion-col size="8">
+              <div class="text-buscar-cajas">Buscar</div>
+            </ion-col>
+            <ion-col size="4">
+              <img src="/assets/icon/icn_buscar.svg" alt="resumen" class="c-icn-ir m-top-26">
+            </ion-col>
+          </ion-row>
+
+        </div>
+        </ion-col>
+        <ion-col class="m-top-20"  size="6">
+          <div class="caja-ofrece">
+            <ion-row>
+            <ion-col size="8">
+              <div class="text-buscar-cajas">Ofrecer</div>
+            </ion-col>
+            <ion-col size="4">
+              <img src="/assets/icon/icn_mas.svg" alt="resumen" class="c-icn-ir m-top-26">
+            </ion-col>
+          </ion-row>
+          
+          </div>
+        </ion-col>
+      </ion-row>
+      <!--secc-mejoraperfil-->
+      <!--=================-->
+      <div class="m-top-20">
+        <div >
+          <ion-row class="caja-mejora">
+            <ion-col size="10"  >
+              <div class="c-caja-orden-texto">Mis recomendaciones</div>
+              </ion-col>
+            <ion-col size="2">
+              <div>
+                <img src="/assets/icon/icn_irv2.svg" alt="resumen" class="c-icn-ir">
+                </div>
+            </ion-col>
+          </ion-row>
+          <ion-row class="caja-mejora">
+            <ion-col size="10">
+              <div class="c-caja-orden-texto">Mejorar mi perfil</div>
+              </ion-col>
+            <ion-col size="2">
+              <div>
+                <img src="/assets/icon/icn_irv2.svg" alt="resumen" class="c-icn-ir">
+                </div>
+            </ion-col>
+          </ion-row>
+        </div>
+      </div>
+      <!--fin header-->
+    </ion-grid>
+  </ion-content>
+</ion-app>

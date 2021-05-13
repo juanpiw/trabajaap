@@ -1,0 +1,101 @@
+<ion-app>
+  <ion-content #content [scrollEvents]="true" class="c-contenedor" [fullscreen]="true">
+    <div class="c-contenedor no-padding no-margin">
+      <ion-grid class="no-padding no-margin grilla">
+        <div class="c-contenedor-busqueda">
+          <div (click)="volver();">
+            <img src="/assets/icon/icn_volver.svg" alt="volver" class="c-icn-back">
+          </div>
+          <!--scroll-->
+          <ion-row class="ion-align-items-start">
+            <ion-col size="9">
+            </ion-col>
+            <ion-col size="3" class="ion-align-self-end">
+              <div class="c-btn-scroll" (click)="scrollToTop()">
+                <img src="/assets/icon/icn_desplegar.svg" alt="volver" class="c-deplegar-img">
+              </div>
+            </ion-col>
+          </ion-row>
+          <!--TITULO-->
+          <ion-row>
+            <ion-col>
+              <div class="c-titulo_componente">¿Qué trabajos o personas buscas?</div>
+            </ion-col>
+          </ion-row>
+          <!--BUSCAR-->
+          <ion-row class="grilla">
+            <ion-col>
+              <form>
+                <div class="buscar-position">
+                  <img src="/assets/icon/buscarinput.svg" alt="volver" class="icn-buscar">
+                </div>
+                <div class="form_buscar">
+                  <input type="text" placeholder="Escribe una palabra clave" />
+                </div>
+                
+              </form>
+            </ion-col>
+          </ion-row>
+          <!--ESTADO-->
+          <ion-row>
+            <div class="togle-ubica">
+              <ion-toggle color="danger"></ion-toggle>
+            </div>
+          </ion-row>
+          <!--CONFIGURACION-->
+          <ion-row class="grilla">
+            <ion-col size="10">
+              <div class="configura-cuenta">Configura tu busqueda para tener mejores resultados</div>
+            </ion-col>
+            <ion-col size="2">
+              <div (click)="mostrarModal()" class="circle">
+                <img src="/assets/icon/configurar.svg" alt="volver" class="c-configurar">
+              </div>
+            </ion-col>
+          </ion-row>
+
+          <ion-row class="c-mapa-back">
+            <ion-col size="12">
+            </ion-col>
+          </ion-row>
+        </div>
+        <!--fin contenedor busqueda-->
+        <!--MAPA-->
+        <ion-row class="ajuste-mapa">
+          <ion-col size="12">
+            <div class="c-contenedor-white-mapa">
+              <div class="padding-8">
+                <app-mapa></app-mapa>
+              </div>
+            </div>
+          </ion-col>
+        </ion-row>
+        <!--OFERTAS-->
+        <div class="grilla">
+          <ion-row>
+            <ion-col size="12">
+              <div class="c-contenedor-ofertas">
+                <app-cajaofertas></app-cajaofertas>
+              </div>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="12">
+              <div class="c-contenedor-ofertas">
+                <app-lista-ofertas></app-lista-ofertas>
+              </div>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="12">
+              <div class="c-contenedor-ofertas">
+                <app-ofertas-modalidad></app-ofertas-modalidad>
+              </div>
+            </ion-col>
+          </ion-row>
+        </div>
+
+      </ion-grid>
+    </div>
+  </ion-content>
+</ion-app>

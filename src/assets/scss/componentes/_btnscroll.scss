@@ -1,0 +1,24 @@
+
+$color:#E63780;
+.c-btn-scroll{
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background:white;
+    position: fixed;
+    z-index: 10000;
+    margin-top: 204%;
+    text-align: right;
+    box-shadow: 4px 4px 12px #dedede;
+   
+}
+.c-deplegar-img{
+    width: 20px;
+    width: 20px;
+    transform: rotate(-180deg);
+    margin: auto;
+    display: block;
+    margin-top: 10px;
+    
+}

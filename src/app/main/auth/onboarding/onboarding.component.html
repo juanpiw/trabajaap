@@ -1,0 +1,103 @@
+<ion-app>
+  <ion-content  [fullscreen]="true">
+    <ion-content>
+      <ion-slides pager="true" [options]="slideOpts">
+        <!--ion slider 1-->
+        <!--============-->
+        <ion-slide>
+          <ion-content>
+            <div class="c-selider_diapo1 c-padding-general">
+          <ion-row>
+            <ion-col>
+              <img src="/assets/icon/logo.svg" alt="trabaj" class="c-logo">
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="no-margin">
+              <img src="/assets/icon/dlider1.svg" alt="trabaj" class="c-img__slider">
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="12">
+              <div class="c-titulo_slider1">Empleo Rápido</div>
+            </ion-col>
+            <ion-col size="12">
+              <div class="c-subtitulo_slider1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi iste nulla amet velit dolorum dolorem consectetur distinctio vitae ea aliquid
+                 voluptates est, labore aut ad quia non modi esse! Eius?</div>
+            </ion-col>
+          </ion-row>
+         <div class="c-omitir">omitir</div>
+        </div>
+        </ion-content>
+        </ion-slide>
+         <!--ion slider 2-->
+         <!--============-->
+        <ion-slide class="c-selider_diapo2">
+          <ion-content>
+            <div class="c-selider_diapo1 c-padding-general">
+          <ion-row>
+            <ion-col>
+              <img src="/assets/icon/logo.svg" alt="trabaj" class="c-logo">
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="no-margin">
+              <img src="/assets/icon/dlider2.svg" alt="trabaj" class="c-img__slider">
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="12">
+              <div class="c-titulo_slider1">Contacta Gratis</div>
+            </ion-col>
+            <ion-col size="12">
+              <div class="c-subtitulo_slider1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi iste nulla amet velit dolorum dolorem consectetur distinctio vitae ea aliquid
+                 voluptates est, labore aut ad quia non modi esse! Eius?</div>
+            </ion-col>
+          </ion-row>
+         <div class="c-omitir">omitir</div>
+        </div>
+        </ion-content>
+        </ion-slide>
+         <!--ion slider 3-->
+        <!--============-->
+        <ion-slide class="c-selider_diapo3">
+          <ion-content>
+            <div class="c-selider_diapo3 c-padding-general">
+          <ion-row>
+            <ion-col>
+              <img src="/assets/icon/logo.svg" alt="trabaj" class="c-logo">
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="no-margin">
+              <img src="/assets/icon/dlider3.svg" alt="trabaj" class="c-img__slider">
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="12">
+              <div class="c-titulo_slider1">Busca cerca de ti</div>
+            </ion-col>
+            <ion-col size="12">
+              <div class="c-subtitulo_slider3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi iste nulla amet velit dolorum dolorem consectetur distinctio </div>
+            </ion-col>
+          </ion-row>
+          
+         <ion-row (click)="irA()" class="c-distancia-btn-seguir">
+           <ion-col size="7">
+           </ion-col>
+           <ion-col  size="3" class="ion-align-self-end">
+           <div class="c-omitir-icn"> omitir</div>
+           </ion-col>
+           <ion-col  size="2" class="ion-align-self-end">
+             <div class="p-img circulo"> <img src="/assets/icon/icn_siguiente.svg" alt="trabaj" class="c-siguiente"></div>
+           
+           </ion-col>
+         </ion-row> 
+        
+        </div>
+        </ion-content>
+        </ion-slide>
+      </ion-slides>
+    </ion-content>
+  </ion-content>
+</ion-app>
